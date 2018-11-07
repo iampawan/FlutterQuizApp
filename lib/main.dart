@@ -121,9 +121,7 @@ class _HomePageState extends State<HomePage> {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: <Widget>[
                           FilterChip(
-                            backgroundColor:
-                                Color(0xff000000 + random.nextInt(0x00ffffff))
-                                    .withOpacity(0.4),
+                            backgroundColor: Colors.grey[100],
                             label: Text(results[index].category),
                             onSelected: (b) {},
                           ),
@@ -131,10 +129,10 @@ class _HomePageState extends State<HomePage> {
                             width: 10.0,
                           ),
                           FilterChip(
-                            backgroundColor:
-                                Color(0xff000000 + random.nextInt(0xff000000))
-                                    .withOpacity(0.4),
-                            label: Text(results[index].difficulty),
+                            backgroundColor: Colors.grey[100],
+                            label: Text(
+                              results[index].difficulty,
+                            ),
                             onSelected: (b) {},
                           )
                         ],
